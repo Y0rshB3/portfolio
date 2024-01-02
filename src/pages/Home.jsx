@@ -7,14 +7,13 @@ import BlogSection from '../components/Blog/BlogSection';
 import ReviewSection from '../components/Review/ReviewSection';
 import Contact from "../components/Contact/Contact";
 import PortfolioSection from '../components/Protfolio/PortfolioSection';
-import Hero from '../components/Hero/Hero';
+import Hero3 from '../components/Hero/Hero3';
 
 const Home = () => {
-  const { heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData } = data;
+  const { heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData, socialData2 } = data;
   return (
     <>
-      <div className="st-height-b80 st-height-lg-b80"></div>
-      <Hero data={heroData.homeOneHero} socialData={socialData} />
+      <Hero3 data={heroData.homeThreeHero} socialData={socialData2} />
       <About data={aboutData} data-aos="fade-right" />
       <Iconbox data={serviceData} data-aos="fade-right" />
       <Skill data={skillData} data-aos="fade-right" />
