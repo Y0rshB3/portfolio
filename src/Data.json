@@ -1,27 +1,8 @@
 {
   "heroData": {
-    "homeOneHero": {
-      "bgImgLink": "/images/background/hero-bg.jpg",
-      "imgLink": "/images/section/hero-img.jpg",
-      "title": "Edward <br /> Davis",
-      "subTitle": "Hello, I’m",
-      "designation": "Visual Designer"
-    },
-    "homeTwoHero": {
-      "imgAuthor": "/images/section/hero-img.jpg",
-      "bgImgLink": "/images/background/hero-bg.jpg",
-      "title": "Hi, I am <span>Jhon Doe</span>",
-      "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
-    },
     "homeThreeHero": {
       "imgAuthor": "/images/section/hero-img.jpg",
       "bgImgLink": "/images/background/hero-bg-1.jpg",
-      "title": "Hi, I am <span>Jhon Doe</span>",
-      "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
-    },
-    "homeFourHero": {
-      "imgAuthor": "/images/section/hero-img.jpg",
-      "bgImgLink": "/images/background/hero-bg-2.jpg",
       "title": "Hi, I am <span>Jhon Doe</span>",
       "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
     }
