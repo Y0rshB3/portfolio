@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Page404 from './components/404/Page404';
+import Page404 from './App404.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sass/style.scss';
 
