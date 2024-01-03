@@ -19,6 +19,6 @@ app.use('/api/v1/info', apiRouterInfo);
 app.use('/api/v1', apiRouter);
 // Más rutas y controladores según sea necesario
 
-app.listen(process.env.portListen || 3000, '0.0.0.0', () => {
+app.listen(3000, '0.0.0.0', () => {
     console.log('Servidor corriendo en el puerto 3000');
 });
