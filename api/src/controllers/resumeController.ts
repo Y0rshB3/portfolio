@@ -21,7 +21,7 @@ export async function getResume(req: Request, res: Response): Promise<void> {
   const socialRepository = AppDataSource.getRepository(InfoSocial);
   const homeSkillRepository = AppDataSource.getRepository(InfoHomeSkill).createQueryBuilder('infoHomeSkill');
   const portfolioRepository = AppDataSource.getRepository(InfoPortfolio);
-  const formContactRepository = AppDataSource.getRepository(InfoFormContact);
+  const formContactRepository = AppDataSource.getRepository(InfoFormContact).createQueryBuilder('infoFormContact');
   const homeRepository = AppDataSource.getRepository(InfoHome).createQueryBuilder('infoHome');
   const serviceRepository = AppDataSource.getRepository(InfoService);
   res.json({
@@ -48,7 +48,7 @@ export async function getResume(req: Request, res: Response): Promise<void> {
       educationTitle: "Education",
       education: await educationRepository.find(),
     },
-    contactData: await formContactRepository.find(),
+    contactData: await formContactRepository.getOne(),
     socialData: await socialRepository.find({
       where: {type: "secundary"}
     }),

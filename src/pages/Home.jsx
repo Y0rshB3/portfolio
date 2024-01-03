@@ -1,4 +1,4 @@
-import data from '../Data.json';
+import React, { useState, useEffect } from 'react';
 import About from '../components/About/About';
 import Iconbox from '../components/Iconbox/Iconbox';
 import Skill from '../components/Skill/Skill';
@@ -10,6 +10,16 @@ import Contact from "../components/Contact/Contact";
 import Hero3 from '../components/Hero/Hero3';
 
 const Home = () => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch('http://localhost:3000/api/v1/resume')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error al obtener los datos:', error));
+  }, []);
+  if (!data) {
+    return <p>Loading...</p>;
+  };
   const { heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData, socialData2 } = data;
   return (
     <>
