@@ -12,7 +12,7 @@ import Hero3 from '../components/Hero/Hero3';
 const Home = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch('https://y0rshb3.com:3000/api/v1/resume')
+    fetch('https://y0rshb3.com/api/v1/resume')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error al obtener los datos:', error));
