@@ -31,7 +31,7 @@ const AppDataSource = new DataSource({
     Service,
     Social
   ],
-  synchronize: true,
+  synchronize: false,
 });
 
 module.exports = {
