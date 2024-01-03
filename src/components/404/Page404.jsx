@@ -1,4 +1,3 @@
-import SectionHeading from "../SectionHeading/SectionHeading";
 import "./Page404.scss";
 import { Link } from "react-router-dom";
 
