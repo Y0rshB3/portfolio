@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        404: 'src/404.jsx'
+        404: '404.html'
       }
     }
   }
