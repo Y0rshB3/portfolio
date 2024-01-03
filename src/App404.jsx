@@ -5,7 +5,7 @@ import Page404 from './components/404/Page404';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-function App404() {
+function App() {
   useEffect(() => {
     Aos.init({ once: true });
   }, []);
@@ -21,4 +21,4 @@ function App404() {
   );
 }
 
-export default App404;
+export default App;
