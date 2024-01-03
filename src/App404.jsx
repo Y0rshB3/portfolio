@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Page404 />} />
+          <Route path='*' element={<Page404 />} />
         </Route>
       </Routes>
     </BrowserRouter>
