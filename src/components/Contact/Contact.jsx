@@ -28,7 +28,7 @@ const Contact = ({ data, socialData }) => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/v1/contact', {
+      const response = await fetch('https://y0rshb3.com/api/v1/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -82,13 +82,13 @@ const Contact = ({ data, socialData }) => {
             <div id="st-alert"></div>
             <form onSubmit={handleSubmit} className="st-contact-form" id="contact-form">
               <div className="st-form-field">
-                <input value={formData.nombre} onChange={handleChange} type="text" id="name" name="name" placeholder="Your Name"  />
+                <input value={formData.nombre} onChange={handleChange} type="text" id="name" name="name" placeholder="Your Name" required/>
               </div>
               <div className="st-form-field">
-                <input value={formData.email} onChange={handleChange} type="text" id="email" name="email" placeholder="Your Email"  />
+                <input value={formData.email} onChange={handleChange} type="text" id="email" name="email" placeholder="Your Email" required/>
               </div>
               <div className="st-form-field">
-                <input value={formData.subject} onChange={handleChange} type="text" id="subject" name="subject" placeholder="Your Subject"  />
+                <input value={formData.subject} onChange={handleChange} type="text" id="subject" name="subject" placeholder="Your Subject" required/>
               </div>
               <div className="st-form-field">
                 <textarea value={formData.message} onChange={handleChange} cols="30" rows="10" id="message" name="message" placeholder="Your Message" required></textarea>
