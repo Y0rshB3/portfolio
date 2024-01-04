@@ -10,6 +10,7 @@ const Skill = require('../models/InfoSkill').InfoSkill;
 const Portfolio = require('../models/InfoPortfolio').InfoPortfolio;
 const Service = require('../models/InfoService').InfoService;
 const Social = require('../models/InfoSocial').InfoSocial;
+const Contact = require('../models/contact').Contact;
 
 const AppDataSource = new DataSource({
   type: "mysql",
@@ -29,7 +30,8 @@ const AppDataSource = new DataSource({
     Skill,
     Portfolio,
     Service,
-    Social
+    Social,
+    Contact,
   ],
   synchronize: false,
 });
